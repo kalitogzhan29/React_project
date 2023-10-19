@@ -1,0 +1,102 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #efefef;
+}
+
+.container{
+    padding: 20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.card{
+    position: relative;
+    width:400px;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px 1px rgba(0, 0, 0, 0.1);
+    overflow:hidden
+}
+
+.card:before{
+    content:'';
+    position:absolute;
+    width:100%;
+    height:270px;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to top, #00f2fe, #4facfe);
+    clip-path: circle(400px at 50% -48.5% )
+}
+
+.header{
+    position: relatuve;
+    height:265px
+}
+
+.mail{
+    position:absolute;
+    top: 1rem;
+    right:2rem;
+    font-size:1.5rem;
+    color:#fff;
+    opacity:.8;
+    transition: .3s;
+    z-index: 3;
+}
+
+.mail.hover{
+    opacity: 1;
+}
+
+.hamburger-menu{
+    position: absolute;
+    width:21px;
+    height:16px;
+    top:1.4rem;
+    left:1.9rem;
+    z-index: 3;
+    transition: .3s;
+    opacity:.8;
+}
+
+.hamburger-menu:hover{
+    opacity: 1;
+}
+
+.hamburger-menu .center{
+    position: absolute;
+    height:2px;
+    width:70%;
+    top:50px;transform: translateY(-50%);
+    background-color: #fff;
+    border-radius: 1px;
+}
+
+.hamburger-menu:before, .hamburger-menu:after{
+    content:"";
+    position:absolute;
+    width: 100px;
+    height:2px;
+    border-radius:1px;
+    background-color: #fff;
+}
+
+.hamburger-menu:before{
+    top: 0;
+}
+
+.hamburger-menu:after{
+    bottom: 0;
+}
+ 
+
+
