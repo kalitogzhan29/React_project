@@ -15,13 +15,13 @@ function App() {
       <Router>
         <Navbar/>
          <Routes>
-        <Route path="/" exact component={<Home/>}/>
+        <Route path="/" element={<Home/>}/>
         <Route path="/profile" element={<Profile/>}/>
         <Route path="/consultation" element={<Consultation/>}/>
         <Route path="/login" element={<Login/>}/>
         <Route path="/signup" element={<SignUp/>}/>
         </Routes> 
-       <Footer/>
+       {/* <Footer/> */}
       </Router>
    </div>
   );

@@ -24,7 +24,7 @@
   transition: 0.2s ease-in;
 }
 .nav-links-dark{
-  color: #333;
+  color: #835b5b;
 }
 .nav-links:hover{
   color: var(--primary-color);
@@ -34,7 +34,7 @@
   color: var(--primary-color);
 }
 .background-dark{
-  background-color: #333;
+  background-color: #449dbe;
 }
 
 .background-transparent{

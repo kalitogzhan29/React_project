@@ -7,7 +7,7 @@ import Showcase from '../components/showcase/Showcase.js'
 function SignUp() {
   return (
     <section>
-     <Showcase/>
+     
   
    </section>
   )
