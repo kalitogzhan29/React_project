@@ -2,6 +2,7 @@ import React from 'react'
 import "../styles/Home.css"
 // import BannerImage from "../../assets/book_logo.png";
 import { Link } from "react-router-dom";
+
 import Footer from '../components/Footer';
 
 
@@ -17,9 +18,9 @@ function Home() {
           <button> Contact us</button>
         </Link>
       </div>
-      <img src='../assets/2.jpg'></img>
+      <img className="img"></img>
     </div>
-{/* <Footer/> */}
+<Footer/>
 </section>
   );
 }

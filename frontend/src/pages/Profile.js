@@ -52,20 +52,8 @@ function Profile() {
                     </div>
                 </div>
 
-                <div class="right">
-                    <div>
-                        <h3 class="number">91</h3>
-                        <h3 class="number-title">Posts</h3>
-                    </div>
-                    <div>
-                        <h3 class="number">2.4K</h3>
-                        <h3 class="number-title">Following</h3>
-                    </div>
-                    <div>
-                        <h3 class="number">4.7K</h3>
-                        <h3 class="number-title">Followers</h3>
-                    </div>
-          </div>
+
+         
 
         </div>
 

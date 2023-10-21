@@ -28,6 +28,7 @@ const Navbar=()=>{
                     <CustomLink to="/">Home</CustomLink>
                   <CustomLink to="/consultation">Consultation</CustomLink>
                   <CustomLink to="/profile">Profile</CustomLink>
+                  <CustomLink to="/signup">Sign Up</CustomLink>
                 </ul>
               </nav>
             )

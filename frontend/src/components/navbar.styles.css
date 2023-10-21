@@ -61,10 +61,11 @@
   .container {
     margin: 1rem;
     text-align: center;
+    height:100px;
   }
   
   .nav {
-    background-color: #79b1dc;
+    background-color: #835b5b;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -95,9 +96,9 @@
   }
   
   .nav li.active {
-    background-color: #7bb4e0;
+    background-color:#835b5b;
   }
   
   .nav li:hover {
-    background-color: #7ab0da;
+    background-color: #835b5b;
   }

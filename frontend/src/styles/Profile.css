@@ -33,7 +33,7 @@ body{
     height:270px;
     top: 0;
     left: 0;
-    background-image: linear-gradient(to top, #00f2fe, #4facfe);
+    background-image: linear-gradient(to top, #916f6f, #674646);
     clip-path: circle(400px at 50% -48.5% )
 }
 
@@ -117,7 +117,7 @@ body{
     height:110px;
     border-radius:50% ;
     background: url('../assets/profile_photo.jpg') no-repeat center / cover;
-    border:4px solid #00d8fe;
+    border:4px solid #674646;
     margin-bottom: 2px;
     overflow: hidden;
     cursor: pointer;
@@ -129,7 +129,7 @@ body{
     height:100%;
     top:0;
     left:0;
-    background-color: rgba(79, 172, 254, .7);
+    background-color: #674646;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -256,7 +256,7 @@ opacity: 1;
 .follow{
     padding: 9.6px 0;
     width: 100%;
-    background: linear-gradient(to right, #4facfe 0%, #00f2fe 140%);
+    background: linear-gradient(to right, #674646 0%, #7f5a5a 140%);
     color: #fff;
     text-align: center;
     text-decoration: none;
@@ -270,8 +270,8 @@ opacity: 1;
 .share{
     padding: 7.6px 0;
     width: 100%;
-    border: 2px solid #4facfe;
-    color: #4facfe;
+    border: 2px solid #674646;
+    color: #7f5a5a;
     text-decoration: none;
     text-align: center;
     font-size: .7rem;

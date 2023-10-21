@@ -1,120 +1,63 @@
-// import React from 'react';
-// import './footer.styles.css';
-// import PrivacyModal from './Privacy';
-// import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-// import{
-//     faYoutube,
-//     faGithub,
-//     faFacebook,
-// } from "@fortawesome/free-brands-svg-icons";
-// import ""
-// // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// // import {
-// //     faYoutube,
-// //     faGithub,
-// //     faFacebook,
-// // } from "@fortawesome/free-brands-svg-icons";
-// // import { faCopyright } from "@fortawesome/free-solid-svg-icons";
+import React from 'react';
+import './footer.styles.css';
+import { Container,Segment } from 'semantic-ui-react';
+import { FacebookShareButton,WhatsappShareButton } from 'next-share';
+import { FacebookIcon,WhatsappIcon
+ } from 'react-share';
 
-// const Footer = () =>{
-//     return(
-//         <footer className="footer">
-//             <div className="footer-container">
-//                 <div className="item1">
-//                     <PrivacyModal />
-//                 </div>
+const Footer = () =>{
+    return(
+        <section className='footer-container'>
+            <div className='container'>
+                <h2>If you have any questions feel free to ask</h2>
 
-//                 <div className="item2">
-//                     <span style={{ paddingRight: 5 }}>Copyright </span>
-//                     <FontAwesomeIcon icon={faCopyright} />{" "}
-//                     <span style={{ paddingLeft: 5 }}>
-//                         {new Date().getFullYear()} YourCompany. All Rights
-//                         Reserved.
-//                     </span>
-//                 </div>
-//                 <a
-//                     href="https://github.com/sudiptob2/simple-react-footer"
-//                     target="_blank"
-//                     className="item3"
-//                 >
-//                     <FontAwesomeIcon icon={faGithub} />
-//                 </a>
-//                 <a
-//                     href="http://fb.com/sudiptob2"
-//                     target="_blank"
-//                     className="item4"
-//                 >
-//                     <FontAwesomeIcon icon={faFacebook} />
-//                 </a>
-//                 <a
-//                     href="https://www.youtube.com/"
-//                     target="_blank"
-//                     className="item5"
-//                 >
-//                     <FontAwesomeIcon icon={faYoutube} />
-//                 </a>
+                <form className='footer-form'>
+                    <div className='form-group'>
+                        <label htmlFor="name" className='form-label'>Name: </label>
+                        <input type='text' id="name" className='form-input' placeholder='Enter your name'/>
+                    </div>
 
-//                 {false && <PrivacyModal click={true} />}
-//             </div>
-//         </footer>
-//     );
-// };
+                    <div className='form-group'>
+                        <label htmlFor='email' className='form-label' >Email: </label>
+                        <input type='email' id="email" className='form-input' placeholder='Enter your email'/>
+                    </div>
 
-// export default Footer;
+                    <div className='form-group'>
+                        <label htmlFor='Question' className='form-label'>Question: </label>
+                        <textarea className='form-input' id="Question" placeholder='Type your Question'>
 
-// // import React from "react";
-// // import "./footer.styles.css"
-// // import PrivacyModal from "../ModalView/PrivacyModal";
-// // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// // // import {
-// // //     faYoutube,
-// // //     faGithub,
-// // //     faFacebook,
-// // // } from "@fortawesome/free-brands-svg-icons";
-// // // import { faCopyright } from "@fortawesome/free-solid-svg-icons";
+                        </textarea>
+                    </div>
 
-// // const Footer = () => {
-// //     return (
-// //         <footer className="footer">
-// //             <div className="footer-container">
-// //                 <div className="item1">
-// //                     <PrivacyModal />
-// //                 </div>
+                    <div className='form-group'>
+                        <button  className='form-submit'>Submit</button>
+                    </div>
+                </form>
+                <Container>
+                    <Segment>
+                      <FacebookShareButton url="https://youtu.be/0XqSujRgVXI"
+                      quote={'Facebook'}
+                      hashtag='#React'
+                      >
+                        
+                        <FacebookIcon  logoFillColor="white" round={true}>
+                            </FacebookIcon>
+                            </FacebookShareButton> 
+                            < WhatsappShareButton
+                            url="https://youtu.be/0XqSujRgVXI"
+                            quote={'Facebook'}
+                            hashtag='#React'>
+                            <WhatsappIcon logoFillColor="white" round={true}>
 
-// //                 <div className="item2">
-// //                     <span style={{ paddingRight: 5 }}>Copyright </span>
-// //                     {/* <FontAwesomeIcon icon={faCopyright} />{" "} */}
-// //                     <span style={{ paddingLeft: 5 }}>
-// //                         {new Date().getFullYear()} YourCompany. All Rights
-// //                         Reserved.
-// //                     </span>
-// //                 </div>
-// //                 <a
-// //                     href="https://github.com/sudiptob2/simple-react-footer"
-// //                     target="_blank"
-// //                     className="item3"
-// //                 >
-// //                     {/* <FontAwesomeIcon icon={faGithub} /> */}
-// //                 </a>
-// //                 <a
-// //                     href="http://fb.com/sudiptob2"
-// //                     target="_blank"
-// //                     className="item4"
-// //                 >
-// //                     {/* <FontAwesomeIcon icon={faFacebook} /> */}
-// //                 </a>
-// //                 <a
-// //                     href="https://www.youtube.com/"
-// //                     target="_blank"
-// //                     className="item5"
-// //                 >
-// //                     {/* <FontAwesomeIcon icon={faYoutube} /> */}
-// //                 </a>
+                            </WhatsappIcon>
+                            </WhatsappShareButton>
+                    </Segment>
+                </Container>
+                <p  >&copy; 2023 BookStore. All Rights Reserved</p>
 
-// //                 {false && <PrivacyModal click={true} />}
-// //             </div>
-// //         </footer>
-// //     );
-// // };
+            </div>
+        </section>
+    )
+}
 
-// // export default Footer;
+export default Footer;
