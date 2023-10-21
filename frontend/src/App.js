@@ -1,29 +1,27 @@
 import './App.css';
-import{ NavBar } from "./components/NavBar";
+import Navbar from './components/Navbar';
+
 import Home from './pages/Home';
-<<<<<<< HEAD
-// import Consultation from './pages/Сonsultation';
-=======
 import Profile from './pages/Profile';
 import Consultation from './pages/Сonsultation';
->>>>>>> 894c6c246f747e08b6e6fbf380a7b12547994310
+import Login from './pages/Login'
+import SignUp from './pages/SignUp'
 import {BrowserRouter as Router,Route, Routes} from "react-router-dom";
+import Footer from './components/Footer';
 
 function App() {
   return (
     <div className="App"> 
       <Router>
-        <NavBar/>
+        <Navbar/>
          <Routes>
-<<<<<<< HEAD
-        <Route path="/" exact component={Home}/>
-        {/* <Route path="/consultation" exact component={Consultation}/> */}
-=======
         <Route path="/" exact component={<Home/>}/>
         <Route path="/profile" element={<Profile/>}/>
         <Route path="/consultation" element={<Consultation/>}/>
->>>>>>> 894c6c246f747e08b6e6fbf380a7b12547994310
+        <Route path="/login" element={<Login/>}/>
+        <Route path="/signup" element={<SignUp/>}/>
         </Routes> 
+       <Footer/>
       </Router>
    </div>
   );
